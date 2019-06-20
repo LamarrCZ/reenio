@@ -1,0 +1,9 @@
+/.vs/*
+
+/ReenioInfopanel/bin/*
+/ReenioInfopanel/obj/*
+/ReenioInfopanel/wwwroot/*
+
+
+/ClientSide/bin/*
+/ClientSide/obj/*
