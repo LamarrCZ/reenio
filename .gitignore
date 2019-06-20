@@ -7,3 +7,4 @@
 
 /ClientSide/bin/*
 /ClientSide/obj/*
+/ClientSide/node_modules/*
