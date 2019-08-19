@@ -8,3 +8,7 @@
 /ClientSide/bin/*
 /ClientSide/obj/*
 /ClientSide/node_modules/*
+
+
+/ReenioApi/bin/*
+/ReenioApi/obj/*
