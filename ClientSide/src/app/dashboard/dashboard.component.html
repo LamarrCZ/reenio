@@ -1,3 +1,6 @@
-<div>
-  Data ze serveru: <pre>{{dataFromServer|json}}</pre>
+<div #dashboard class="dashboard">
+  <div class="dashboard-inner">
+    <app-container *ngFor="let container of containers" [placeId]="container.placeId" [ngStyle]="{'height': (100 / containersCount) + '%'}"></app-container>
+  </div>
+  <div class="actual-time"></div>
 </div>

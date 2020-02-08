@@ -9,20 +9,32 @@ namespace ReenioInfopanel.Controllers
 {
     public class ApiController : Controller
     {
-        [HttpPost]
-        public async Task<IActionResult> Test(string name)
+        [HttpGet]
+        public async Task<IActionResult> Test()
         {
-            string apiKey = "TkNrjTpWc9D3bzAfMM5RZyO3SidReT1SHPCNLJi7cdwVbhSnSwRZfpDgW5X5N6Zt";
-
+            string apiKey = "TkNlDQQsB2eWGlcP6hA7SET41TwjJRjriJxetkUhKwyiXpztjgc2VuuYu8pk7o0R";
 
             ReenioApiClient client = new ReenioApiClient(apiKey);
 
             var reservations = await client.ListReservations();
 
+            return new JsonResult(reservations);
+        }
+
+        /*[HttpPost]
+        public async Task<IActionResult> Test(string name)
+        {
+            string apiKey = "TkNlDQQsB2eWGlcP6hA7SET41TwjJRjriJxetkUhKwyiXpztjgc2VuuYu8pk7o0R";
+
+            ReenioApiClient client = new ReenioApiClient(apiKey);
+
+            var reservations = await client.ListReservations();
+
+            return new JsonResult(reservations);
             return new JsonResult(new {
                 Data = name?.ToUpper(),
                 Reservations = reservations
             });
-        }
+        }*/
     }
 }

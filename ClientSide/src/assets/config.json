@@ -1,0 +1,17 @@
+{
+    "apiBaseUrl": "./api/test",
+    "containers": [
+        {
+            "name": "Kurt 1",
+            "placeId": 8723
+        },
+        {
+            "name": "Kurt 2",
+            "placeId": 8725
+        }
+    ],
+    "refreshTime": 1800,
+    "scaling": 0.1,
+    "dashboardTitle": "Reenio Infopanel",
+    "startPoint": 100
+}
