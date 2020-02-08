@@ -1,6 +1,6 @@
 # reenioInfoPanel
 
-Vitejte na Githubu mého BP pro VŠB-TUO.
+Vitejte na Githubu mé BP pro VŠB-TUO.
 
 Update 08.02.2020:
 + Přejmenovány komponenty z dashboard/court/court-item na dashboard/container/item
